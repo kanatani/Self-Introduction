@@ -2,6 +2,10 @@ body {
     margin: 0;
 }
 
+h1,h2,h3,p {
+    letter-spacing: 3px;
+}
+
 /* header */
 .header-left,.header-rigth {
     display: flex;
@@ -64,3 +68,31 @@ body {
     letter-spacing: 15px;
     line-height: 300px;
 }
+
+.profile {
+    height: 600px;
+    margin-top: 100px;
+}
+
+.profile-title {
+    margin: auto;
+    border-bottom: 2px solid skyblue;
+    padding-bottom: 5px;
+    width: 100px;
+}
+
+.profile-message {
+    width: 50%;
+    margin: 60px auto;
+    line-height: 60px;
+}
+
+.profile-message-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.profile-message p{
+    padding-left: 100px;
+}
+
