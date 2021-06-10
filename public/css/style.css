@@ -48,6 +48,15 @@ h1,h2,h3,p {
     text-decoration: none;
 }
 
+
+/* 共通部分 */
+.title {
+    margin: auto;
+    padding-bottom: 5px;
+    width: 100px;
+    padding-top: 100px;
+}
+
 /* トップ */
 .main {
     background-image: url("../img/main/main_image.JPG");
@@ -71,14 +80,10 @@ h1,h2,h3,p {
 
 .profile {
     height: 600px;
-    margin-top: 100px;
 }
 
 .profile-title {
-    margin: auto;
     border-bottom: 2px solid skyblue;
-    padding-bottom: 5px;
-    width: 100px;
 }
 
 .profile-message {
@@ -93,6 +98,20 @@ h1,h2,h3,p {
 }
 
 .profile-message p{
-    padding-left: 100px;
+    padding-left: 150px;
 }
 
+
+/* 経歴 */
+.history {
+    height: 600px;
+}
+
+.history-title {
+    border-bottom: 2px solid rgb(101, 202, 243);
+    width: 110px;
+}
+
+.card {
+    display: flex;
+}
