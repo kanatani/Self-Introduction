@@ -1,8 +1,17 @@
+body {
+    margin: 0;
+}
+
+/* header */
+.header-left,.header-rigth {
+    display: flex;
+    color: white;
+    letter-spacing: 3px;
+}
 
 .header-left {
-    margin: 20px;
+    margin: 50px;
     float: left;
-    display: flex;
 }
 
 .header-left img {
@@ -18,10 +27,40 @@
 }
 
 .header-rigth {
-    display: flex;
     float: right;
 }
 
 .header-navi {
     list-style: none;
+    display: flex;
+}
+
+.header-navi li{
+   margin: 50px 50px 0px 20px;
+}
+
+.header-list {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+/* トップ */
+.main {
+    background-image: url("../img/main/main_image.JPG");
+    height: 750px;
+    width: 100%;
+    border-bottom-left-radius: 460px 30px;
+    border-bottom-right-radius: 460px 30px;
+}
+
+.main-message {
+    clear: both;
+    margin: 40px 80px 0 0;
+}
+
+.welcome-message {
+    text-align: right;
+    color: white;
+    letter-spacing: 15px;
+    line-height: 300px;
 }
