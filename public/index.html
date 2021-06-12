@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Self introduction</title>
         <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
         <header class="l-header">
@@ -69,8 +70,10 @@
             <div>
                 <h2 class="title portfolio-title">Portfollio</h2>
             </div>
+            <!-- ポートフォリオカード一覧 -->
             <div class="portfolio-main">
-                <div class="portfolio-card">
+                <!-- connecting -->
+                <div class="portfolio-card portfolio-one">
                     <div class="portfolio-img">
                         <img src="img/port/portfolio.jpg" alt="">
                         <p>Connecting</p>
@@ -81,9 +84,55 @@
                         <p> You can find your best friend.</p>
                     </div>
                     <div class="portfolio-button-list">
+                        <button class="portfolio-button" onclick="location.href='http://original-nao.jp/'">App</button>
+                        <button class="portfolio-button" onclick="location.href='https://github.com/kanatani/original.git'">github</button>
+                    </div>
+                </div>
+                <!-- person -->
+                <div class="portfolio-card portfolio-two">
+                    <div class="portfolio-img">
+                        <img src="img/port/portfolio2.jpg" alt="">
+                        <p>Person</p>
+                    </div>
+                    <div class="portfolio-message">
+                        <p class="portfolio-message-second">Personality app</p>
+                        <p> It is an application that measures personality.</p>
+                        <p> You can plan your personality.</p>
+                    </div>
+                    <div class="portfolio-button-list">
                         <button class="portfolio-button" onclick="location.href='https://www.awspersonalityapp.com/'">App</button>
                         <button class="portfolio-button" onclick="location.href='https://github.com/kanatani/personal.git'">github</button>
                     </div>
+                </div>
+                <!-- ブログ -->
+                <div class="portfolio-card portfolio-three">
+                    <div class="portfolio-img">
+                        <img src="img/port/portfolio3.jpg" alt="">
+                        <p class="blog-heading">Tech blog</p>
+                    </div>
+                    <div class="portfolio-message">
+                        <p class="portfolio-message-third">blog</p>
+                        <p> It is a blog that outputs technology.</p>
+                        <p> I'm writing technology about the front end.</p>
+                    </div>
+                    <div class="portfolio-button-list">
+                        <button class="portfolio-button" onclick="location.href='https://my-reading-books.com/'">Blog</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="sns">
+            <div>
+                <div class="back-button">
+                    <div class="back-button-solid">
+                    </div>
+                </div>
+                <div class="sns-button">
+                    <ul class="sns-button-list"> 
+                        <li><i class="fab fa-twitter"></i></li>
+                        <li><i class="fab fa-facebook-f"></i></li>
+                        <li><i class="fab fa-line"></i></li>
+                    </ul>
                 </div>
             </div>
         </div>

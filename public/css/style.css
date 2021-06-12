@@ -114,7 +114,7 @@ h1,h2,h3,p {
 }
 
 .card-part {
-    margin: 130px;
+    margin: 100px;
     box-sizing: border-box;
     box-shadow: 0 0 4px;
     width: 400px;
@@ -185,11 +185,12 @@ h1,h2,h3,p {
 
 .portfolio-title{
     width: 148px;
+    padding-top: 60px;
 }
 
 .portfolio-main {
-    height: 900px;
-    width: 50%;
+    height: 1800px;
+    width: 40%;
     margin: auto;
 }
 
@@ -207,7 +208,7 @@ h1,h2,h3,p {
 }
 
 .portfolio-img p{
-    color: white;
+    color: tan;
     position: absolute;
     bottom: 5px;
     left: 20px;
@@ -232,7 +233,6 @@ h1,h2,h3,p {
 .portfolio-button {
     width: 20%;
     margin: 30px 0 0 0px;
-    padding-left: 20px;
     border-radius: 10px;
     letter-spacing: 2px;
     height: 30px;
@@ -240,4 +240,63 @@ h1,h2,h3,p {
     cursor: pointer;
     border: none;
     color: tan;
+    transition: 1s;
+}
+
+.portfolio-button:hover {
+    opacity: 0.5;
+    background-color: antiquewhite;
+}
+
+.blog-heading {
+    color: black;
+}
+
+/* sns */
+
+.sns {
+    height: 200px;
+    position: relative;
+}
+
+.back-button,.back-button-solid {
+    margin: auto;
+}
+
+.back-button {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    background-color: white;
+    border-radius: 60px;
+    padding: 10px;
+    padding-top: 15px;
+    top: -10%;
+    left: 0;
+    right: 0;
+}
+
+.back-button-solid {
+    height: 20px;
+    width: 20px;
+    border: 1px solid black;
+    transform: rotate(45deg);
+    border-color: black transparent transparent black;
+    cursor: pointer;
+}
+
+.back-button-solid:hover{
+    transition: 0.5s;
+    opacity: 0.5;
+}
+
+.sns-button {
+    padding-top: 40px;
+}
+
+.sns-button-list {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
 }
