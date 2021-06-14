@@ -2,156 +2,179 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scala=1,user-scalable=yes">
         <title>Self introduction</title>
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     </head>
     <body>
-        <header class="l-header">
-            <div class="header-left">
-                <img src="img/profile1.JPG" alt="ヘッダー用の画像">
-                <h2 class="header-title">Kanatani Profile</h2>
+        <div class="container">
+            <header class="l-header">
+                <div class="header-left">
+                    <img src="img/profile1.JPG" alt="ヘッダー用の画像">
+                    <h2 class="header-title">Kanatani Profile</h2>
+                </div>
+                <div class="sm">
+                    <div class="humburger">
+                        <div class="icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <nav class="sm-nav">
+                        <ul>
+                            <li><a class="" href="">top</a></li>
+                            <li><a class="" href="" >Profile</a></li>
+                            <li><a class="" href="" >History</a></li>
+                            <li><a class="" href="" >Portfolio</a></li>
+                            <li><a class="" href="" >Acount</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="header-rigth">
+                    <nav class="pc">
+                        <ul class="header-navi">
+                            <li><a class="list-parts header-list" href="">top</a></li>
+                            <li><a class="list-parts header-list" href="" >Profile</a></li>
+                            <li><a class="list-parts header-list" href="" >History</a></li>
+                            <li><a class="list-parts header-list" href="" >Portfolio</a></li>
+                            <li><a class="list-parts header-list" href="" >Acount</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+            <div class="main">
+                <div class="main-message">
+                    <h2 class ="welcome-message">Welcome<span class="message-span">to my Profile</span></h2>
+                </div>
             </div>
-            <div class="header-rigth">
-                <nav>
-                    <ul class="header-navi">
-                        <li><a class="list-parts header-list" href="">top</a></li>
-                        <li><a class="list-parts header-list" href="" >Profile</a></li>
-                        <li><a class="list-parts header-list" href="" >History</a></li>
-                        <li><a class="list-parts header-list" href="" >Portfolio</a></li>
-                        <li><a class="list-parts header-list" href="" >Acount</a></li>
-                    </ul>
-                </nav>
+            <div class="profile">
+                <div>
+                    <h2 class="title profile-title">Profile</h2>
+                </div>
+                <div class="profile-message">
+                    <h1 class="profile-message-title">はじめまして</h1>
+                    <p>関西の大学に通っている大学生</p>
+                    <p>プログラミングと心理学を中心に勉強中</p>
+                    <p>将来はフロントエンドエンジニアを目指しています</p>
+                    <p>よろしくお願いします！</p>
+                </div>
             </div>
-        </header>
-        <div class="main">
-            <div class="main-message">
-                <h2 class ="welcome-message">Welcome to my Profile</h2>
+            <div class="history">
+                <div>
+                    <h2 class="title history-title">History</h2>
+                </div>
+                <div class="card">
+                    <div class="card-part card-one">
+                        <img src="img/card/card-one.JPG" alt="">
+                        <p class="card-title">High school</p>
+                        <p class="card-sub-title">Playing with friends</p>
+                        <button class="card-button button-one">detail</button>
+                    </div>
+                    <div class="card-part">
+                        <img src="img/card/card-two.JPG" alt="">
+                        <p class="card-title">College school<br></p>
+                        <p class="card-sub-title">Playing with Drums</p>
+                        <button class="card-button button-two">detail</button>
+                    </div>
+                    <div class="card-part">
+                        <img src="img/card/card-three.JPG" alt="">
+                        <p class="card-title">At the moment</p>
+                        <p class="card-sub-title">Play with program</p>
+                        <button class="card-button button-three">detail</button>
+                    </div>
+                </div>
             </div>
+            <div class="portfolio">
+                <div>
+                    <h2 class="title portfolio-title">Portfollio</h2>
+                </div>
+                <!-- ポートフォリオカード一覧 -->
+                <div class="portfolio-main">
+                    <!-- connecting -->
+                    <div class="portfolio-card portfolio-one">
+                        <div class="portfolio-img">
+                            <img src="img/port/portfolio.jpg" alt="">
+                            <p>Connecting</p>
+                        </div>
+                        <div class="portfolio-message">
+                            <p class="portfolio-message-first">Matching app</p>
+                            <p> App matching people who have a lot in common.</p>
+                            <p> You can find your best friend.</p>
+                        </div>
+                        <div class="portfolio-button-list">
+                            <button class="portfolio-button" onclick="location.href='http://original-nao.jp/'">App</button>
+                            <button class="portfolio-button" onclick="location.href='https://github.com/kanatani/original.git'">github</button>
+                        </div>
+                    </div>
+                    <!-- person -->
+                    <div class="portfolio-card portfolio-two">
+                        <div class="portfolio-img">
+                            <img src="img/port/portfolio2.jpg" alt="">
+                            <p>Person</p>
+                        </div>
+                        <div class="portfolio-message">
+                            <p class="portfolio-message-second">Personality app</p>
+                            <p> It is an application that measures personality.</p>
+                            <p> You can plan your personality.</p>
+                        </div>
+                        <div class="portfolio-button-list">
+                            <button class="portfolio-button" onclick="location.href='https://www.awspersonalityapp.com/'">App</button>
+                            <button class="portfolio-button" onclick="location.href='https://github.com/kanatani/personal.git'">github</button>
+                        </div>
+                    </div>
+                    <!-- ブログ -->
+                    <div class="portfolio-card portfolio-three">
+                        <div class="portfolio-img">
+                            <img src="img/port/portfolio3.jpg" alt="">
+                            <p class="blog-heading">Tech blog</p>
+                        </div>
+                        <div class="portfolio-message">
+                            <p class="portfolio-message-third">blog</p>
+                            <p> It is a blog that outputs technology.</p>
+                            <p> I'm writing technology about the front end.</p>
+                        </div>
+                        <div class="portfolio-button-list">
+                            <button class="portfolio-button portfolio-last-button" onclick="location.href='https://my-reading-books.com/'">Blog</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="sns">
+                <div>
+                    <div class="back-button">
+                        <div class="back-button-solid">
+                        </div>
+                    </div>
+                    <div class="sns-button">
+                        <ul class="sns-button-list"> 
+                            <li class="sns-button-part twitter"><a class="fab fa-twitter" href="https://twitter.com/share?url=http://original-nao.jp/" target="_blank" rel="nofollow">
+                            </a></li>
+                            <li class="sns-button-part facebook"><a class="fab fa-facebook-f" href="http://www.facebook.com/share.php?u=「シェアしたいURL」&t=「タイトル」" target="_blank">
+                            </a></li>
+                            <li class="sns-button-part line"><a href="http://line.me/R/msg/text/?「シェアしたいURL">
+                            <p class="">LINE</p>
+                            </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-url">
+                <ul class="footer-list">
+                    <li><a class="list-parts footer-list-parts" href="">Top</a></li>
+                    <li><a class="list-parts footer-list-parts" href="">Profile</a></li>
+                    <li><a class="list-parts footer-list-parts" href="">History</a></li>
+                    <li><a class="list-parts footer-list-parts" href="">Portfolio</a></li>
+                    <li><a class="list-parts footer-list-parts" href="">Account</a></li>
+                </ul>
+            </div>
+            <footer>
+                <div class="footer-message">
+                    <p>naoki progile @ 2021</p>
+                </div>
+            </footer>
         </div>
-        <div class="profile">
-            <div>
-                <h2 class="title profile-title">Profile</h2>
-            </div>
-            <div class="profile-message">
-                <h1 class="profile-message-title">はじめまして</h1>
-                <p>関西の大学に通っている大学生</p>
-                <p>プログラミングと心理学を中心に勉強中</p>
-                <p>将来はフロントエンドエンジニアを目指しています</p>
-                <p>よろしくお願いします！</p>
-            </div>
-        </div>
-        <div class="history">
-            <div>
-                <h2 class="title history-title">History</h2>
-            </div>
-            <div class="card">
-                <div class="card-part card-one">
-                    <img src="img/card/card-one.JPG" alt="">
-                    <p class="card-title">High school</p>
-                    <p class="card-sub-title">Playing with friends</p>
-                    <button class="card-button button-one">detail</button>
-                </div>
-                <div class="card-part">
-                    <img src="img/card/card-two.JPG" alt="">
-                    <p class="card-title">College school<br></p>
-                    <p class="card-sub-title">Playing with Drums</p>
-                    <button class="card-button button-two">detail</button>
-                </div>
-                <div class="card-part">
-                    <img src="img/card/card-three.JPG" alt="">
-                    <p class="card-title">At the moment</p>
-                    <p class="card-sub-title">Play with program</p>
-                    <button class="card-button button-three">detail</button>
-                </div>
-            </div>
-        </div>
-        <div class="portfolio">
-            <div>
-                <h2 class="title portfolio-title">Portfollio</h2>
-            </div>
-            <!-- ポートフォリオカード一覧 -->
-            <div class="portfolio-main">
-                <!-- connecting -->
-                <div class="portfolio-card portfolio-one">
-                    <div class="portfolio-img">
-                        <img src="img/port/portfolio.jpg" alt="">
-                        <p>Connecting</p>
-                    </div>
-                    <div class="portfolio-message">
-                        <p class="portfolio-message-first">Matching app</p>
-                        <p> App matching people who have a lot in common.</p>
-                        <p> You can find your best friend.</p>
-                    </div>
-                    <div class="portfolio-button-list">
-                        <button class="portfolio-button" onclick="location.href='http://original-nao.jp/'">App</button>
-                        <button class="portfolio-button" onclick="location.href='https://github.com/kanatani/original.git'">github</button>
-                    </div>
-                </div>
-                <!-- person -->
-                <div class="portfolio-card portfolio-two">
-                    <div class="portfolio-img">
-                        <img src="img/port/portfolio2.jpg" alt="">
-                        <p>Person</p>
-                    </div>
-                    <div class="portfolio-message">
-                        <p class="portfolio-message-second">Personality app</p>
-                        <p> It is an application that measures personality.</p>
-                        <p> You can plan your personality.</p>
-                    </div>
-                    <div class="portfolio-button-list">
-                        <button class="portfolio-button" onclick="location.href='https://www.awspersonalityapp.com/'">App</button>
-                        <button class="portfolio-button" onclick="location.href='https://github.com/kanatani/personal.git'">github</button>
-                    </div>
-                </div>
-                <!-- ブログ -->
-                <div class="portfolio-card portfolio-three">
-                    <div class="portfolio-img">
-                        <img src="img/port/portfolio3.jpg" alt="">
-                        <p class="blog-heading">Tech blog</p>
-                    </div>
-                    <div class="portfolio-message">
-                        <p class="portfolio-message-third">blog</p>
-                        <p> It is a blog that outputs technology.</p>
-                        <p> I'm writing technology about the front end.</p>
-                    </div>
-                    <div class="portfolio-button-list">
-                        <button class="portfolio-button" onclick="location.href='https://my-reading-books.com/'">Blog</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="sns">
-            <div>
-                <div class="back-button">
-                    <div class="back-button-solid">
-                    </div>
-                </div>
-                <div class="sns-button">
-                    <ul class="sns-button-list"> 
-                        <li class="sns-button-part twitter"><a class="fab fa-twitter" href="https://twitter.com/share?url=http://original-nao.jp/" target="_blank" rel="nofollow">
-                        </a></li>
-                        <li class="sns-button-part facebook"><a class="fab fa-facebook-f" href="http://www.facebook.com/share.php?u=「シェアしたいURL」&t=「タイトル」" target="_blank">
-                        </a></li>
-                        <li class="sns-button-part line"><a href="http://line.me/R/msg/text/?「シェアしたいURL">
-                        <p class="">LINE</p>
-                        </a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-url">
-            <ul class="footer-list">
-                <li><a class="list-parts footer-list-parts" href="">おはよう</a></li>
-                <li><a class="list-parts footer-list-parts" href="">おはよう</a></li>
-                <li><a class="list-parts footer-list-parts" href="">おはよう</a></li>
-                <li><a class="list-parts footer-list-parts" href="">おはよう</a></li>
-                <li><a class="list-parts footer-list-parts" href="">おはよう</a></li>
-            </ul>
-        </div>
-        <footer>
-
-        </footer>
     </body>
 </html>
