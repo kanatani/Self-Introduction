@@ -394,6 +394,9 @@ footer {
 
     header {
         height: 80px;
+        z-index: 10;
+        width: 100%;
+        background-color: rgba(34, 49, 52, 0.9);
     }
 
     .header-left {
@@ -416,12 +419,13 @@ footer {
     /* ハンバーガー */
     .humburger {
         display: block;
-        position: relative;
-        float: right;
-    }
-
-    .icon {
-        margin: 20px;
+        position: absolute;
+        top: 20px;
+        right: 5px;
+        width: 50px;
+        height: 44px;
+        cursor: pointer;
+        transition: 1s;
     }
 
     .icon span {
@@ -430,17 +434,74 @@ footer {
         top: 30px;
         width: 30px;
         height: 4px;
-        background-color: black;
+        background-color: rgb(255, 255, 255);
         border-radius: 8px;
+        transition: ease 0.75s;
     }
 
+    .icon span:nth-of-type(1) {
+        top: 0px;
+    }
+
+    .icon span:nth-of-type(2) {
+        top: 15px;
+    }
+
+    .icon span:nth-of-type(3) {
+        bottom: 0px;
+    }
+
+    .close span:nth-of-type(1) {
+        top: 15px;
+        transform: rotate(-45deg);
+    }
+
+    .close span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    .close span:nth-of-type(3) {
+        top: 15px;
+        transform: rotate(45deg);
+    }
+
+    .sm-nav {
+        position: absolute;
+        top: 80px;
+        z-index: 10;
+        width: 100%;
+        background-color: rgba(34, 49, 52, 0.9);
+        display: block;
+        height: 427px;
+    }
+
+    .sm-nav ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center; 
+        padding-left: 0px;
+      }
+
+    .sm-nav li {
+        display: block;
+        height: 80px;
+        border-bottom: 2px solid aliceblue;
+      }
+    
+    .sm-nav a{
+        line-height: 80px;
+        color: white;
+      }
+
+      /* main message */
     .main {
         background-image: url("../img/main/main_image.JPG");
-        height: 300px;
+        height: 550px;
         width: 100%;
         background-size: cover;
         margin: auto;
         text-align: center;
+        position: relative;
     }
 
     .main-message {
@@ -448,7 +509,9 @@ footer {
     }
 
     .welcome-message {
-        padding-top: 20px;
+        position: absolute;
+        bottom: 0;
+         right: 70px;
     }
 
     .message-span {
@@ -457,7 +520,7 @@ footer {
 
     /* プロフィール */
     .profile {
-        height: 400px;
+        height: 500px;
     }
 
     .profile-message {
@@ -465,12 +528,12 @@ footer {
     }
 
     .profile-message-title {
-        font-size: 20px;
+        font-size: 24px;
     }
 
     .profile-message p{
         padding-left: 0px;
-        font-size: 10px;
+        font-size: 11px;
     }
 
     /* 経歴 */
@@ -566,18 +629,20 @@ footer {
 
     .footer-url {
         text-align: center;
-        height: 450px;
+        height: 300px;
     }
 
     .footer-list {
         display: block;
         padding-left: 0px;
+        line-height: 60px;
     }
 
     .footer-list li{
-        height: 70px;
+        display: block;
+        height: 60px;
+        border-bottom: 2px solid aliceblue;
     }
-
 
 }
 
