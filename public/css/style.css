@@ -467,12 +467,18 @@ footer {
 
     .sm-nav {
         position: absolute;
+        transition: ease 0.75s;
         top: 80px;
         z-index: 10;
         width: 100%;
         background-color: rgba(34, 49, 52, 0.9);
         display: block;
         height: 427px;
+    }
+
+    .sm-list {
+        top: -500px;
+        transition: ease 0.75s;
     }
 
     .sm-nav ul {
