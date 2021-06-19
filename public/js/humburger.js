@@ -1,5 +1,4 @@
 window.onload = function() {
-
     function hamburger() {
         let icon = document.getElementById('icon'); 
         icon.classList.toggle('close'); //ハンバーガー要素
@@ -13,5 +12,4 @@ window.onload = function() {
     hum.addEventListener('click', function (){
         hamburger();
     });
-    
 }
