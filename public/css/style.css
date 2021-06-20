@@ -259,6 +259,10 @@ ul {
     cursor: pointer;
 }
 
+.close {
+    display: none;
+}
+
 /* ポートフォリオ */
 .portfolio {
     background-color: rgb(249, 245, 241);
