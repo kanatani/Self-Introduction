@@ -269,8 +269,6 @@ ul {
     opacity: 0.5;
 }
 
-
-
 /* ポートフォリオ */
 .portfolio {
     background-color: rgb(249, 245, 241);
@@ -469,7 +467,7 @@ footer {
 /* レスポンシブ */
 @media screen and (max-width: 480px) {
     body {
-        max-width: 375px;
+        max-width: 480px;
         box-sizing: border-box;
     }
 
@@ -601,8 +599,8 @@ footer {
 
     .welcome-message {
         position: absolute;
-        bottom: 0;
-         right: 70px;
+        left: 25%;
+        top: 40%;
     }
 
     .message-span {
@@ -642,12 +640,23 @@ footer {
     }
 
     .modal-parts {
-        height: 560px;
         width: 380px;
     }
 
     .modal-parts-image img{
         width: 50%;
+    }
+
+    #modal1 {
+        height: 590px;
+    }
+
+    #modal2 {
+        height: 570px;
+    }
+
+    #modal3 {
+        height: 560px;
     }
 
     /* ポートフォリオ */

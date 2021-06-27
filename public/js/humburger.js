@@ -1,15 +1,18 @@
-window.onload = function() {
-    function hamburger() {
-        let icon = document.getElementById('icon'); 
-        icon.classList.toggle('close'); //ハンバーガー要素
+function hamburger() {
+    let icon = document.getElementsByClassName('icon'); 
 
-        let nav = document.getElementById('sm-list'); 
-        nav.classList.toggle('sm-list');//nav要素
-    }
+    for(let i = 0; i < icon.length; i++) icon[i].classList.toggle('close');
 
-    let hum = document.getElementById('hum');
+    let nav = document.getElementsByClassName('sm-nav'); 
 
-    hum.addEventListener('click', function (){
-        hamburger();
-    });
+    for(let i = 0; i < nav.length; i++) nav[i].classList.toggle('sm-list');
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    let hum = document.getElementById('hum');
+    hum.addEventListener('click',hamburger);
+});
+
+module.exports = hamburger;
+
+
